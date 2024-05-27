@@ -26,11 +26,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/indentation.js"
-    ],
-    "/swapping_variable": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/swapping_variable.js"
     ]
   },
   "ampFirstPages": []
