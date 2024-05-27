@@ -1,0 +1,39 @@
+# Indentation in Python
+
+Indentation is a fundamental aspect of Python's syntax. Unlike many other programming languages that use braces or other symbols to define code blocks, Python uses indentation to indicate a block of code. This makes Python code visually clean and easy to read.
+
+## Importance of Indentation
+
+In Python, indentation is not just for readability; it is a requirement. Incorrect indentation will lead to errors.
+
+## Syntax
+
+Python uses a colon (:) to start a new block of code, and the following lines must be indented. Typically, four spaces are used for indentation.
+
+## Examples
+
+### Example 1: If Statement
+
+```python copy showLineNumbers
+# Correct indentation
+if True:
+    print("This is indented correctly.")
+
+# Incorrect indentation
+if True:
+print("This will cause an IndentationError.")
+```
+---
+## Example 2 : for loop
+
+```python copy showLineNumbers
+# Correct indentation
+for i in range(5):
+    print(i)
+
+# Incorrect indentation
+for i in range(5):
+print(i)
+
+```
+In the first block, the print statement is indented, making it part of the for loop. In the second block, the print statement is not indented, leading to an error.

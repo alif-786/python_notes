@@ -1,0 +1,213 @@
+
+### 1. Using a Temporary Variable
+
+```python copy showLineNumbers
+# Using a temporary variable
+a = 5
+b = 10
+
+# Swapping
+temp = a
+a = b
+b = temp
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 2. Using Tuple Packing/Unpacking
+
+```python copy showLineNumbers
+# Using tuple packing/unpacking
+a = 5
+b = 10
+
+# Swapping
+a, b = b, a
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 3. Using Arithmetic Operations
+
+```python copy showLineNumbers
+# Using arithmetic operations
+a = 5
+b = 10
+
+# Swapping
+a = a + b
+b = a - b
+a = a - b
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+```python copy showLineNumbers
+# Using arithmetic operations *,/
+a = 5
+b = 10
+
+# Swapping
+a = a * b
+b = a / b
+a = a / b
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 4. Using XOR bitwise operation (without temporary variable)
+
+```python copy showLineNumbers
+# Using XOR bitwise operation (without temporary variable)
+a = 5
+b = 10
+
+# Swapping
+a = a ^ b
+b = a ^ b
+a = a ^ b
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 5. Using Pythonic Way with Multiple Assignment
+
+```python copy showLineNumbers
+# Using Pythonic way with multiple assignment
+a = 5
+b = 10
+
+# Swapping
+a, b = b, a
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 6. Using `collections.deque.rotate` method
+
+```python copy showLineNumbers
+from collections import deque
+
+# Using collections.deque.rotate method
+a = 5
+b = 10
+
+# Swapping
+dq = deque([a, b])
+dq.rotate()
+
+a, b = dq
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 7. Using `copy()` method (specific to list, set, and dict)
+
+```python copy showLineNumbers
+# Using copy() method (specific to list, set, and dict)
+a = [5]
+b = [10]
+
+# Swapping
+a[:], b[:] = b[:], a[:]
+
+print("After swapping:")
+print("a =", a[0])
+print("b =", b[0])
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+### 8. Using functions (custom function)
+
+```python copy showLineNumbers
+# Using functions (custom function)
+def swap(x, y):
+    return y, x
+
+a = 5
+b = 10
+
+# Swapping
+a, b = swap(a, b)
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+```
+
+**Output**:
+```
+After swapping:
+a = 10
+b = 5
+```
+
+These are all possible scenarios for swapping two numbers in Python. Each method has its own advantages and use cases, so the choice of method may depend on the specific requirements of your program.

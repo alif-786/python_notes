@@ -1,0 +1,92 @@
+# Multiple Variables Declaration in Python
+
+In Python, you can declare multiple variables in a single line. This can be done in a few different ways, including assigning the same value to multiple variables or assigning different values to each variable.
+
+## Assigning the Same Value to Multiple Variables
+
+You can assign the same value to multiple variables in a single statement.
+
+```python copy showLineNumbers
+# Assigning the same value to multiple variables
+a = b = c = 10
+print("a:", a)
+print("b:", b)
+print("c:", c)
+```
+
+**Output**:
+```
+a: 10
+b: 10
+c: 10
+```
+
+**Explanation**: The variables `a`, `b`, and `c` are all assigned the value `10`.
+
+## Assigning Different Values to Multiple Variables
+
+You can assign different values to multiple variables in a single line using tuple unpacking.
+
+```python copy showLineNumbers
+# Assigning different values to multiple variables
+x, y, z = 1, 2, 3
+print("x:", x)
+print("y:", y)
+print("z:", z)
+```
+
+**Output**:
+```
+x: 1
+y: 2
+z: 3
+```
+
+**Explanation**: The variables `x`, `y`, and `z` are assigned the values `1`, `2`, and `3`, respectively.
+
+## Swapping Variables
+
+Python allows for easy swapping of variable values without needing a temporary variable.
+
+```python copy showLineNumbers
+# Swapping variables
+m, n = 5, 10
+print("Before swap - m:", m, "n:", n)
+
+m, n = n, m
+print("After swap - m:", m, "n:", n)
+```
+
+**Output**:
+```
+Before swap - m: 5 n: 10
+After swap - m: 10 n: 5
+```
+
+**Explanation**: The values of `m` and `n` are swapped in a single line using tuple unpacking.
+
+## Multiple Variable Declarations with Different Data Types
+
+You can also declare multiple variables with different data types in a single line.
+
+```python copy showLineNumbers
+# Declaring multiple variables with different data types
+name, age, is_student = "Alice", 20, True
+print("Name:", name)
+print("Age:", age)
+print("Is Student:", is_student)
+```
+
+**Output**:
+```
+Name: Alice
+Age: 20
+Is Student: True
+```
+
+**Explanation**: The variables `name`, `age`, and `is_student` are assigned the values `"Alice"`, `20`, and `True`, respectively.
+
+## Conclusion
+
+Declaring multiple variables in Python can simplify your code and improve readability. Whether you're assigning the same value, different values, or swapping values, Python's syntax makes these operations straightforward and efficient.
+

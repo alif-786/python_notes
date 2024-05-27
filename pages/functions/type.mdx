@@ -1,0 +1,40 @@
+# The `type()` Function in Python
+
+The `type()` function in Python is used to determine the type of an object. This can be particularly useful for debugging and ensuring that variables are of the expected type.
+
+## Syntax
+
+```python
+type(object)
+```
+
+* object: The object whose type you want to determine.
+The `type()` function returns the type of the specified object.
+
+## Example: Using `type()`
+Let's look at an example to see how the` type() `function works:
+
+# Example variables
+integer_variable = 10
+string_variable = "Hello, World!"
+list_variable = [1, 2, 3]
+
+```python copy showLineNumbers
+# Using type() to check the types
+print("Type of integer_variable:", type(integer_variable))
+print("Type of string_variable:", type(string_variable))
+print("Type of list_variable:", type(list_variable))
+```
+
+In this example:
+
+* We define three variables: an integer, a string, and a list.
+* We use the type() function to print the types of these variables.
+When you run this code, you will see the following output:
+```
+Type of integer_variable: <class 'int'>
+Type of string_variable: <class 'str'>
+Type of list_variable: <class 'list'>
+
+```
+This output shows that integer_variable is of type int, string_variable is of type str, and list_variable is of type list.

@@ -1,0 +1,7 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/indentation": "pages/indentation.js",
+  "/swapping_variable": "pages/swapping_variable.js"
+}

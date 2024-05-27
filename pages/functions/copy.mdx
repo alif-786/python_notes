@@ -1,0 +1,58 @@
+# The `copy()` Function in Python
+
+The `copy()` function in Python is used to create a shallow copy of an object. It returns a new object that is a copy of the original object, but with a separate identity.
+
+## Syntax
+
+```python copy showLineNumbers
+copy.copy(object)
+```
+
+- **object**: The object that you want to copy.
+
+The `copy()` function returns a shallow copy of the specified object.
+
+## Example: Using `copy()`
+
+Let's look at an example to see how the `copy()` function works:
+
+```python copy showLineNumbers
+import copy
+
+# Example list
+original_list = [1, 2, 3]
+
+# Creating a copy using copy()
+copied_list = copy.copy(original_list)
+
+# Modifying the copied list
+copied_list.append(4)
+
+# Print both lists
+print("Original List:", original_list)
+print("Copied List:", copied_list)
+```
+
+**Output**:
+```
+Original List: [1, 2, 3]
+Copied List: [1, 2, 3, 4]
+```
+
+**Explanation**: 
+- We import the `copy` module.
+- `original_list` is a list with elements `[1, 2, 3]`.
+- We create a copy of `original_list` using `copy.copy(original_list)`.
+- We append `4` to `copied_list`.
+- The modification in `copied_list` does not affect `original_list`, demonstrating that `copy()` creates a shallow copy.
+
+## Basic Information
+
+- The `copy()` function is used to create a shallow copy of an object.
+- Shallow copy means that the outermost container is duplicated, but the inner objects are referenced.
+- It is useful for creating independent copies of mutable objects like lists and dictionaries.
+
+## Conclusion
+
+The `copy()` function in Python is handy for creating shallow copies of objects. Understanding the difference between shallow and deep copies is crucial for managing data and avoiding unintended side effects in your programs.
+

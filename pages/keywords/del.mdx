@@ -1,0 +1,106 @@
+
+# The `del` Keyword in Python
+
+The `del` keyword in Python is used to delete objects. It can be used to delete variables, items in a list, attributes in an object, or entire slices from a list.
+
+## Syntax
+
+```python copy showLineNumbers
+del object
+```
+
+- **object**: The object or variable that you want to delete.
+
+The `del` keyword removes the reference to an object, which can lead to the object's deletion if there are no more references to it.
+
+## Example: Using `del`
+
+### Deleting a Variable
+
+```python copy showLineNumbers
+# Deleting a variable
+x = 10
+print("Before deletion:", x)
+
+del x
+# print(x)  # This will raise a NameError: name 'x' is not defined
+
+# After deletion
+print("After deletion:", x)  # This will raise a NameError since 'x' is not defined
+```
+
+**Output**:
+```
+Before deletion: 10
+NameError: name 'x' is not defined
+```
+
+**Explanation**: 
+- We create a variable `x` and print its value.
+- Using `del x`, we delete the variable `x`.
+- Attempting to print `x` after deletion raises a `NameError` since `x` no longer exists.
+
+### Deleting an Item in a List
+
+```python copy showLineNumbers
+# Deleting an item in a list
+numbers = [1, 2, 3, 4, 5]
+print("Before deletion:", numbers)
+
+del numbers[2]  # Delete item at index 2 (value 3)
+
+# After deletion
+print("After deletion:", numbers)
+```
+
+**Output**:
+```
+Before deletion: [1, 2, 3, 4, 5]
+After deletion: [1, 2, 4, 5]
+```
+
+**Explanation**: 
+- We have a list `numbers` with elements `[1, 2, 3, 4, 5]`.
+- Using `del numbers[2]`, we delete the item at index `2` (value `3`).
+- The list `numbers` is modified to `[1, 2, 4, 5]`.
+
+### Deleting an Attribute in an Object
+
+```python copy showLineNumbers
+# Deleting an attribute in an object
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# Create an instance of Person
+person = Person("Alice", 30)
+print("Before deletion:", person.name)
+
+del person.name
+
+# After deletion
+# print(person.name)  # This will raise an AttributeError: 'Person' object has no attribute 'name'
+```
+
+**Output**:
+```
+Before deletion: Alice
+AttributeError: 'Person' object has no attribute 'name'
+```
+
+**Explanation**: 
+- We define a class `Person` with `name` and `age` attributes.
+- We create an instance `person` with name `"Alice"` and age `30`.
+- Using `del person.name`, we delete the `name` attribute.
+- Accessing `person.name` after deletion raises an `AttributeError` since `name` attribute is no longer available.
+
+## Basic Information
+
+- The `del` keyword is used to delete objects or references to objects.
+- It can be used to delete variables, items in a list, attributes in an object, or slices from a list.
+- It can also be used to delete entire variables or objects, freeing up memory.
+
+## Conclusion
+
+The `del` keyword in Python is a powerful tool for managing memory and deleting objects. Understanding how and when to use `del` is important for ensuring efficient memory management and avoiding unintended side effects in your programs.

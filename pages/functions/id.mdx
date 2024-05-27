@@ -1,0 +1,49 @@
+# The `id()` Function in Python
+
+The `id()` function in Python returns the identity (unique identifier) of an object. This identifier is a unique integer for the object during its lifetime. The `id()` function can be used to verify whether two variables reference the same object.
+
+## Syntax
+
+```python copy showLineNumbers
+id(object)
+```
+
+- **object**: The object whose identity you want to determine.
+
+The `id()` function returns the identity of the specified object.
+
+## Example: Using `id()`
+
+Let's look at an example to see how the `id()` function works:
+
+```python copy showLineNumbers
+# Example variables
+a = 10
+b = a
+c = 10
+
+# Using id() to check identities
+print("Identity of a:", id(a))
+print("Identity of b:", id(b))
+print("Identity of c:", id(c))
+```
+
+**Output**:
+```
+Identity of a: 140732686161232
+Identity of b: 140732686161232
+Identity of c: 140732686161232
+```
+
+**Explanation**: 
+- `a` and `c` have the same value (`10`), so they share the same identity.
+- `b` is assigned the same value as `a`, so it shares the same identity as well.
+
+## Basic Information
+
+- The `id()` function is useful for checking if two variables reference the same object.
+- It returns a unique integer that represents the identity of the object.
+
+## Conclusion
+
+The `id()` function in Python provides a unique identifier for an object, allowing you to verify if two variables are referencing the same object. Understanding object identity is crucial for managing data and ensuring correct program behavior.
