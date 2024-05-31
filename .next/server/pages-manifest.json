@@ -4,5 +4,6 @@
   "/_document": "pages/_document.js",
   "/chapter_4/all": "pages/chapter_4/all.js",
   "/chapter_4/if_else_scenarios": "pages/chapter_4/if_else_scenarios.js",
+  "/chapter_4/examples": "pages/chapter_4/examples.js",
   "/chapter_4/type_of_values": "pages/chapter_4/type_of_values.js"
 }

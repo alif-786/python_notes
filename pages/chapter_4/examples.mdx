@@ -1,0 +1,400 @@
+Certainly! Here's the conversion of your Python code examples into MDX format with explanations, examples, and outputs formatted for clarity:
+
+### Decision Making (`if...else` Statement)
+
+#### Example 1: Single Statement Suite
+
+```python copy showLineNumbers
+var = 11001
+
+if (var == 1001): #1001==100
+    print("Automatically take indentation")
+    print("Value of expression is 100")
+    
+print("Good bye!")
+```
+
+#### Output:
+
+```
+Good bye!
+```
+
+---
+
+#### Example 2: Simple `if...else` Statement
+
+```python copy showLineNumbers
+x = 40
+
+if (x < 12):
+    print("40 is greater than 12")
+else:
+    print("40 is less than 12")
+```
+
+#### Output:
+
+```
+40 is less than 12
+```
+
+---
+
+#### Example 3: `if` Statement Without Else
+
+```python copy showLineNumbers
+var = 100
+
+if (var == 1010):
+    print("Value of expression is 100")
+
+print("Good bye!")
+```
+
+#### Output:
+
+```
+Good bye!
+```
+
+---
+
+#### Example 4: Conditional Voting Eligibility Check
+
+```python copy showLineNumbers
+try:
+    age = float(input("Enter your age "))
+    if (age >= 18 and age <= 100):
+        print("You can Vote")
+    else:
+        print("You need to wait for voting")
+    print(type(age))
+except ValueError:
+    print("Invalid age entered. Please enter a valid age.")
+```
+
+#### Output:
+
+```
+Enter your age Ronald
+ValueError: could not convert string to float: 'Ronald'
+```
+
+---
+
+#### Example 5: Basic Input and Output
+
+```python copy showLineNumbers
+a = input("Enter your age ")
+print(a)
+print(type(a))
+```
+
+#### Output:
+
+```
+Enter your age 40
+40
+<class 'str'>
+```
+
+---
+
+#### Example 6: Checking Even or Odd Number
+
+```python copy showLineNumbers
+num = int(input("Enter the number? "))
+if num % 2 == 0:
+    print("Number is Even")
+else:
+    print("Number is Odd")
+```
+
+#### Output:
+
+```
+Enter the number? 5
+Number is Odd
+```
+
+---
+
+#### Example 7: Finding the Largest of Three Numbers
+
+```python copy showLineNumbers
+a = int(input("Enter a? "))
+b = int(input("Enter b? "))
+c = int(input("Enter c? "))
+
+if a > b and a > c:
+    print("a is largest")
+if b > a and b > c:
+    print("b is largest")
+if c > a and c > b:
+    print("c is largest")
+```
+
+#### Output:
+
+```
+Enter a? 4
+Enter b? 4
+Enter c? 5
+c is largest
+```
+
+---
+
+#### Example 8: Finding the Smallest of Three Numbers
+
+```python copy showLineNumbers
+a = int(input("Enter a? "))
+b = int(input("Enter b? "))
+c = int(input("Enter c? "))
+
+if a < b and a < c:
+    print("a is lowest")
+if b < a and b < c:
+    print("b is lowest")
+if c < a and c < b:
+    print("c is lowest")
+```
+
+#### Output:
+
+```
+Enter a? 10
+Enter b? 18
+Enter c? 16
+a is lowest
+```
+
+---
+
+#### Example 9: Boolean Values in `if...else`
+
+```python copy showLineNumbers
+var1 = -10
+if var1:
+    print("1 - Got a true expression value")
+    print(var1)
+else:
+    print("1 - Got a false expression value")
+    print(var1)
+
+var2 = 0
+if var2:
+    print("2 - Got a true expression value")
+    print(var2)
+else:
+    print("False")
+    print(var2)
+
+print("Good bye!")
+```
+
+#### Output:
+
+```
+1 - Got a true expression value
+-10
+False
+0
+Good bye!
+```
+
+---
+
+#### Example 10: Nested `if` Statements
+
+```python copy showLineNumbers
+var = 157
+if var < 400:
+    print("Expression value is less than 200")
+    if var <= 150:
+        print ("Which is 150")
+    elif var == 100:
+        print ("Which is 100")
+    elif var == 50:
+        print ("Which is 50")
+    elif var < 50:
+        print("Expression value is less than 50")
+    else:
+        print("Nothing")
+else:
+    print("Could not find true expression")
+
+print("Good bye!")
+```
+
+#### Output:
+
+```
+Expression value is less than 200
+Which is 150
+Good bye!
+```
+
+---
+
+#### Example 11: Grading based on Percentage
+
+```python copy showLineNumbers
+marks = float(input("Enter the Percentage? "))
+
+if marks > 85 and marks <= 100:
+    print("Congrats! You have scored grade A ...")
+elif marks > 60 and marks <= 85:
+    print("You have scored grade B + ...")
+elif marks > 40 and marks <= 60:
+    print("You have scored grade B ...")
+elif marks > 30 and marks <= 40:
+    print("You have scored grade C ...")
+elif marks > 100:
+    print("Invalid")
+else:
+    print("Sorry, you have failed..")
+```
+
+#### Output:
+
+```
+Enter the Percentage? 78
+You have scored grade B + ...
+```
+
+---
+
+### Ternary Operator
+
+#### Explanation
+
+The ternary operator is a shorthand for an if-else statement. The syntax is `value_if_true if condition else value_if_false`. It's a one-liner that can replace a multi-line `if-else` statement, making your code more concise.
+
+#### Example 12: Using Ternary Operator
+
+```python copy showLineNumbers
+a = 50
+b = 10
+max = a if a > b else b
+print(max)
+```
+
+#### Output:
+
+```
+50
+```
+
+---
+
+#### Example 13: Nested Ternary Operator
+
+```python copy showLineNumbers
+a, b = 10, 20
+print("Both a and b are equal" if a == b else "a is greater than b" if a > b else "b is greater than a")
+```
+
+#### Output:
+
+```
+b is greater than a
+```
+
+---
+
+#### Example 14: Using Nested `if` Statements (Equivalent to Example 13)
+
+```python copy showLineNumbers
+a, b = 10, 20
+if a == b:
+    print("Both a and b are equal")
+else:
+    if a > b:
+        print("a is greater than b")
+    else:
+        print("b is greater than a")
+```
+
+#### Output:
+
+```
+b is greater than a
+```
+
+---
+
+#### Example 15: Using Nested `if...else` Statements
+
+```python copy showLineNumbers
+a, b = 10, 20
+
+if a != b:
+    if a > b:
+        print("a is greater than b")
+    else:
+        print("b is greater than a")
+else:
+    print("Both a and b are equal")
+```
+
+#### Output:
+
+```
+b is greater than a
+```
+
+---
+
+#### Example 16: Conditional Expression using Ternary Operator
+
+```python copy showLineNumbers
+a = 5
+b = 7
+
+result = (str(a) + " is greater") if (a > b) else (str(b) + " is Greater")
+print(result)
+```
+
+#### Output:
+
+```
+7 is Greater
+```
+
+---
+
+#### Example 17: Shortest Value in Ternary Operator
+
+```python copy showLineNumbers
+a, b = 2, 20
+min = a < b and a or b
+print(min)
+```
+
+#### Output:
+
+```
+2
+```
+
+---
+
+#### Example 18: Largest Value in Ternary Operator
+
+```python copy showLineNumbers
+a, b = 2, 20
+max = a > b and a or b
+print(max)
+```
+
+#### Output:
+
+```
+20
+```
+
+---
+
+These examples cover various scenarios of using `if...else` statements and ternary operators in Python, demonstrating their usage and expected outputs.

@@ -22,6 +22,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/chapter_4/examples": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/chapter_4/examples.js"
+    ],
     "/chapter_4/if_else_scenarios": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
