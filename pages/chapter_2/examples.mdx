@@ -1,0 +1,488 @@
+1)
+```python copy showLineNumbers 
+a = 5 
+# a = variable 
+# 5 = value 
+print(a) 
+```
+output:
+```
+5
+```
+---
+2) 
+```python copy showLineNumbers
+a = 55.3
+#type(a)
+print(type(a))
+# it is used to print the datatype name of the respected variable.
+
+```
+output:
+```
+<class 'float'>
+```
+---
+
+3)
+```python copy showLineNumbers
+_a = 6
+print(_a)   # variable starts with _ is valid
+```
+output:
+```
+6
+```
+---
+
+4)
+``` python copy showLineNumbers
+
+1a = 7
+print(1a)  # variable is starts with numeric value
+```
+output:
+```python
+ ERROR:
+  File "<ipython-input-4-79158a133918>", line 1
+    1a = 7
+     ^
+SyntaxError: invalid syntax
+```
+---
+
+5)
+```python copy showLineNumbers
+HTML=10
+print(HTML)
+html = 11
+print(html)
+Html = 12
+HtMl = 13
+HTML = 'abcd'
+print(Html)
+print(HtMl)
+print(HTML)
+# It is case sensitive
+```
+```
+10
+11
+12
+13
+abcd
+```
+---
+
+6)
+```python copy showLineNumbers
+
+if = 5
+print(if)
+```
+```
+ ERROR:
+  File "<ipython-input-7-c1f5fb390a78>", line 1
+    if = 5
+       ^
+SyntaxError: invalid syntax
+```
+---
+
+7)
+```python copy showLineNumbers
+HTML=10
+print(HTML)
+html = 11
+print(html)
+print(HTML)
+```
+```
+10
+11
+10
+```
+---
+8)
+```python copy showLineNumbers
+print(html)
+html = "Priyanka"
+print(html)
+# we have already define html variable & assigned a value it to 11
+# but we are re-assigning a new value to same variable, 
+# it will update automatically.
+```
+output:
+```
+Priyanka
+Priyanka
+```
+---
+9)
+```python copy showLineNumbers
+h+t = 3
+print(h+t)  
+# + (special symbol) is not valid in variable declaratio
+```
+output:
+```
+ File "<ipython-input-17-ff7d53261ea7>", line 1
+    h+t = 3
+    ^
+SyntaxError: cannot assign to operator
+```
+---
+10)
+```python copy showLineNumbers
+h_t = 2
+print(h_t)   # _ is valid in variable declaration
+```
+output:
+```
+2
+```
+---
+
+11)
+```python copy showLineNumbers
+def = 5   # def is keyword in python, & keyword is not valid
+print(def)
+
+# Keywords = (Green + Bold + no bracket) 
+# Ex: if, else, in, not in, break, continue, pass, etc.
+# Functions = (green + not bold + brackets)
+# Ex: type(), strip(), upper(), lower(), print(), etc.
+```
+output:
+```
+ERROR:  
+File "<ipython-input-19-0146e7eea934>", line 1
+    def = 5   # def is keyword in python, & keyword is not valid
+        ^
+SyntaxError: invalid syntax
+```
+---
+12)
+```python copy showLineNumbers
+n 9 = 5
+print(n 9)   # space is not allowed in variable declaration
+```
+output:
+```
+Ranbir Kapoor
+```
+---
+13)
+```python copy showLineNumbers
+print(type(4653.4))
+print(type('python'))
+print(type(-6542434676986545789654667865787543245671))
+# to print variable type of value
+```
+output:
+```
+<class 'float'>
+<class 'str'>
+<class 'int'>
+```
+---
+14)
+```python copy showLineNumbers
+a = 2
+a
+
+```
+output:
+```
+2
+```
+---
+15)
+```python copy showLineNumbers
+# id()
+# =====
+a = 2
+print(id(a))
+# => it will give you the O/P of memory location where 
+# the variable has been stored.
+# => Basically memory locations are in hexa decimal 
+# format, but id() convert it into decimal format & display.
+```
+output:
+```
+140732362536768
+```
+---
+16)
+```python copy showLineNumbers
+z = 2
+print(id(a))
+# => id's are dependent upon the values, value change => ID change
+
+```
+output:
+```
+140732362536768
+```
+---
+17)
+```python copy showLineNumbers
+a = 3255
+b = a   # assign variable value to another variable
+#print(a,b) # We are printing multiple variables in same print statement.
+print(a,b)
+```
+output:
+```
+3255 3255
+```
+---
+18)
+```python copy showLineNumbers
+print(id(a)) # to get id of memory location where variable is initilized
+print(id(b))
+```
+output:
+```
+1493602807376
+1493602807376
+```
+---
+19)
+```python copy showLineNumbers
+a = 10
+print(a)
+print(id(a))
+a = 'Python'
+print(a)
+print(id(a))
+b = 10
+print(id(b))
+# Rule : whenever we update a new value to existing variable, it 
+# will get the new id.
+```
+output:
+```
+10
+140732362537024
+Python
+1493535579312
+140732362537024
+```
+---
+20)
+```python copy showLineNumbers
+a = [5,10,15]
+print(a)
+print(id(a))
+b = a.copy()
+print(b)
+print(id(b))
+# => copy() -> it is used to copy the data from 1 variable to another
+# => it will assign new memory location to the same values which 
+# are present in different variable.
+# => copy() will not work on normal int / string values.
+```
+output:
+```
+[5, 10, 15]
+1493603752576
+[5, 10, 15]
+1493602648768
+```
+---
+21)
+```python copy showLineNumbers
+a = [3254,123]
+b = a.copy()
+print(b)
+print(id(a))
+print(id(b))
+# => copy() only works on list data.
+```
+output:
+```
+[3254, 123]
+1493603753408
+1493602998080
+
+```
+---
+22)
+```python copy showLineNumbers
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa = 78
+# variable length can be anything
+print(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+```
+output:
+```
+78
+```
+---
+23)
+```python copy showLineNumbers
+
+del aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# => it is a keyword, used to delete a variable.
+# => it will free up the memory which has been used by 
+# deleted variable.
+# => if variable have deleted successfully, still del keyword
+# will not notify you.
+# => So, to cross check whether that variable have deleted or not,
+# that time you just need to print same variable again. 
+# If you are getting name error, then assume that variable have
+# been deleted successfully.
+```
+output:
+```
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-47-49376f74d7bd> in <module>
+----> 1 del aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      2 # => it is a keyword, used to delete a variable.
+      3 # => it will free up the memory which has been used by
+      4 # deleted variable.
+      5 # => if variable have deleted successfully, still del keyword
+
+NameError: name 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' is not defined
+```
+---
+24)
+```python copy showLineNumbers
+print(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+```
+output:
+```
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-48-4a067bef166a> in <module>
+----> 1 print(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+
+NameError: name 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' is not defined
+
+```
+---
+25)
+```python copy showLineNumbers
+# Variable declaration types
+ageRam = 28   # Camel Case
+AgeRam = 28   # Pascel Case
+age_ram = 28  # Snake Case
+print(age_ram)
+print(AgeRam)
+# ageRam & AgeRam both will be treated as different variable.
+```
+output:
+```
+28
+28
+```
+---
+26)
+```python copy showLineNumbers
+p=q=r = 50    # multiple variable assigning same value
+print(p,q,r)
+print(q)
+print(r)
+print(id(p), id(q), id(r))
+# if we assign multiple variable to same value in above fashion,
+# its id's are also same, means it is pointing to same memory location.
+```
+output:
+```
+50 50 50
+50
+50
+140732362538304 140732362538304 140732362538304
+
+```
+---
+27)
+```python copy showLineNumbers
+x,y,z,a,b = 1,2,3,4,5
+print(x,y,z,a,b)
+
+print(id(x), id(y), id(z), id(a), id(b))
+
+# if we assign multiple variable to multiple value in above fashion, 
+# its id's are not same, means it is pointing to different memory location.
+```
+output:
+```
+1 2 3 4 5
+140732362536736 140732362536768 140732362536800 140732362536832 140732362536864
+```
+---
+28)
+```python copy showLineNumbers
+# Q. Swip the values using 3rd variable
+# Value Swip Program = 1
+x = 5
+y = 10
+
+# create a temporary variable and swap the values
+temp = x # 5
+x = y # 10
+y = temp  # 5
+
+print(x)
+print(y)
+```
+output:
+```
+10
+5
+```
+---
+29)
+```python copy showLineNumbers
+c = 2222222222248376675656435356586754356659735690379783485687658734658736565746546416385468541164874333333332222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222226745164822222
+e = c*22268156485168598649987867564786865786756567646698473593569348755648964961506341866846418674168153315456416846466422222222222222222283456684699578405786845164853684648416843518073548645135768456784828646846456684697842533584641645354687542786843154864351648646651644584533874684531
+print(e)
+print("Type of E = ",type(e))
+# python has no number limit
+```
+output:
+```
+49484792189845964017385707922827168788423394221821026493711505801198359517950408893624961475564160884891466017755307007544733973414814823218704485167757732515190070310705950412147710599114396804230701281755190477608304460503692802600786008798557332498405321968614278185637758930978238755360836277499418542494341066984396971737595374544459205378178706633120524964218617443970445242934907503872445843007461728672021687321983938754586387186133764365041064395741579475055815007219238642909080797563132867529105168011809927634582978198439009758770285081640366041368948447882
+Type of E =  <class 'int'>
+```
+
+---
+30)
+```python copy showLineNumbers
+x = 4156417895984516410641785684536861248756165
+z = 56415631475815287456
+z_x = x/z
+print(z_x)
+# => everytime you will get O/P in float format 
+# whenever you do division operation.
+```
+output:
+```
+7.367493347595202e+22
+```
+---
+31)
+```python copy showLineNumbers
+4/7
+```
+output:
+```
+2.0
+```
+---
+12)
+```python copy showLineNumbers
+a=b=4
+c = 5
+print(a,b,c)
+print(id(a),id(b),id(c))
+```
+output:
+```
+4 4 5
+140732362536832 140732362536832 140732362536864
+```

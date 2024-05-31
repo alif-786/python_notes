@@ -8,7 +8,6 @@ export default {
         <span>
           all rights reserver
           ALIF {new Date().getFullYear()} ©{' '}
-          
           .
         </span>
       )
