@@ -1,0 +1,75 @@
+Certainly! Here are all the possible if-else scenarios presented using Mermaid diagrams in MDX format:
+
+### If-Else Scenarios in Diagram Form
+
+#### 1. Simple if-else Statement
+
+
+```mermaid
+graph TD;
+    A[Condition] -->|True| B[Action if True]
+    A -->|False| C[Action if False]
+```
+
+
+#### 2. if-elif-else Statement
+
+
+```mermaid
+graph TD;
+    A[Condition 1] -->|True| B[Action if True]
+    A -->|False| C[Condition 2]
+    C -->|True| D[Action if elif True]
+    C -->|False| E[Action if False]
+```
+
+
+#### 3. Nested if-else Statement
+
+
+```mermaid
+graph TD;
+    A[Condition 1] -->|True| B[Condition 2]
+    A -->|False| E[Action if Condition 1 False]
+    B -->|True| C[Action if both True]
+    B -->|False| D[Action if Condition 1 True and Condition 2 False]
+```
+
+
+#### 4. Multiple elif Statements
+
+
+```mermaid
+graph TD;
+    A[Condition 1] -->|True| B[Action if True]
+    A -->|False| C[Condition 2]
+    C -->|True| D[Action if Condition 2 True]
+    C -->|False| E[Condition 3]
+    E -->|True| F[Action if Condition 3 True]
+    E -->|False| G[Action if all False]
+```
+
+
+#### 5. if Statement without else
+
+
+```mermaid
+graph TD;
+    A[Condition] -->|True| B[Action if True]
+    A -->|False| C[No Action]
+```
+
+
+#### 6. if-else if-else with Nested Conditions
+
+
+```mermaid
+graph TD;
+    A[Condition 1] -->|True| B[Condition 2]
+    A -->|False| E[Action if Condition 1 False]
+    B -->|True| C[Action if both True]
+    B -->|False| D[Action if Condition 1 True and Condition 2 False]
+```
+
+
+These diagrams provide a comprehensive visual representation of different if-else scenarios, showcasing how conditions flow through various statements. You can adjust or expand these based on specific requirements or preferences.

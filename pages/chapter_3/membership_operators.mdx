@@ -1,0 +1,88 @@
+Certainly! Here's an explanation of membership operators (`in` and `not in`) in Python, along with examples and their outputs:
+
+### Membership Operators in Python
+
+Membership operators are used to test whether a value or variable is found in a sequence (string, list, tuple, set, or dictionary).
+
+#### 1. `in` Operator
+
+The `in` operator returns `True` if a value exists in the given sequence, otherwise `False`.
+
+**Examples:**
+
+```python copy showLineNumbers
+# Example 1: List
+fruits = ['apple', 'banana', 'cherry']
+print('banana' in fruits)  # True
+
+# Example 2: String
+print('a' in 'banana')  # True
+
+# Example 3: Tuple
+numbers = (1, 2, 3, 4)
+print(3 in numbers)  # True
+
+# Example 4: Set
+my_set = {1, 2, 3}
+print(4 in my_set)  # False
+
+# Example 5: Dictionary (checks keys, not values)
+my_dict = {'name': 'John', 'age': 25}
+print('name' in my_dict)  # True
+print('John' in my_dict)  # False
+```
+
+**Output:**
+
+```
+True
+True
+True
+False
+True
+```
+
+#### 2. `not in` Operator
+
+The `not in` operator returns `True` if a value does not exist in the given sequence, otherwise `False`.
+
+**Examples:**
+
+```python copy showLineNumbers
+# Example 1: List
+fruits = ['apple', 'banana', 'cherry']
+print('orange' not in fruits)  # True
+
+# Example 2: String
+print('z' not in 'banana')  # True
+
+# Example 3: Tuple
+numbers = (1, 2, 3, 4)
+print(5 not in numbers)  # True
+
+# Example 4: Set
+my_set = {1, 2, 3}
+print(2 not in my_set)  # False
+
+# Example 5: Dictionary (checks keys, not values)
+my_dict = {'name': 'John', 'age': 25}
+print('height' not in my_dict)  # True
+```
+
+**Output:**
+
+```
+True
+True
+True
+False
+True
+```
+
+### Explanation
+
+- **Membership Operators (`in`, `not in`):** They are used to test whether a value or variable is found in a sequence.
+- **Examples:** Demonstrates the use of membership operators with different types of sequences such as lists, strings, tuples, sets, and dictionaries.
+- **Output:** Shows the result (`True` or `False`) of each membership operation.
+
+These operators are very useful in conditional statements and loops where you need to check if a particular value exists in a sequence before performing certain actions.

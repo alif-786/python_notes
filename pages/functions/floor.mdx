@@ -1,0 +1,99 @@
+### `floor()` Function in Python
+
+The `floor()` function in Python is a method from the `math` module that returns the largest integer less than or equal to a given number.
+
+#### Syntax:
+
+```python copy showLineNumbers
+import math
+
+math.floor(x)
+```
+
+#### Parameters:
+
+- `x`: A numeric (integer or float) value.
+
+#### Return Value:
+
+- Returns the largest integer less than or equal to `x`.
+
+#### Examples:
+
+1. **Integer Input:**
+
+```python copy showLineNumbers
+import math
+
+x = 10
+result = math.floor(x)
+
+print(f"The floor of {x} is: {result}")
+```
+
+Output:
+```
+The floor of 10 is: 10
+```
+
+2. **Float Input:**
+
+```python copy showLineNumbers
+import math
+
+x = 10.6
+result = math.floor(x)
+
+print(f"The floor of {x} is: {result}")
+```
+
+Output:
+```
+The floor of 10.6 is: 10
+```
+
+3. **Negative Input:**
+
+```python copy showLineNumbers
+import math
+
+x = -10.6
+result = math.floor(x)
+
+print(f"The floor of {x} is: {result}")
+```
+
+Output:
+```
+The floor of -10.6 is: -11
+```
+
+4. **Using in Expression:**
+
+```python copy showLineNumbers
+import math
+
+x = 3.7
+y = 1.2
+
+result = math.floor(x / y)
+
+print(f"The floor of {x} divided by {y} is: {result}")
+```
+
+Output:
+```
+The floor of 3.7 divided by 1.2 is: 3
+```
+
+### Explanation
+
+- **Example 1:** For an integer input (`x = 10`), `math.floor(x)` returns `10`.
+- **Example 2:** For a float input (`x = 10.6`), `math.floor(x)` returns `10`.
+- **Example 3:** For a negative float input (`x = -10.6`), `math.floor(x)` returns `-11`, since it is the largest integer less than `-10.6`.
+- **Example 4:** Demonstrates using `floor()` in an expression.
+
+The `floor()` function is useful when you need to round down a number to the nearest integer. It is often used in various mathematical computations and data analysis tasks.
+
+This should give you a good understanding of how to use `floor()` in Python with various types of inputs. 
+

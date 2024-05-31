@@ -22,20 +22,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/chapter_2/examples": [
+    "/chapter_4/if_else_scenarios": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/chapter_2/examples.js"
+      "static/chunks/pages/chapter_4/if_else_scenarios.js"
     ],
-    "/chapter_2/types": [
+    "/chapter_4/type_of_values": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/chapter_2/types.js"
-    ],
-    "/chapter_3": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/chapter_3.js"
+      "static/chunks/pages/chapter_4/type_of_values.js"
     ]
   },
   "ampFirstPages": []

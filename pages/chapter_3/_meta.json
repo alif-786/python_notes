@@ -1,5 +1,9 @@
 {
     "index":"Introduction to operators ",
-    
+    "arithmetic":"Arithmetic operators",
+    "comparison":"Comparison operators",
+    "assignment":"Assignment operators",
+    "logical":"Logical operators",
+    "membership_operators":"Membership operators",
     "examples":"examples"
 }

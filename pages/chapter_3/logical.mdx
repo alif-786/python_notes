@@ -1,0 +1,124 @@
+Sure, here's an explanation of logical operators (`and`, `or`, `not`) in Python, along with their truth tables and examples:
+
+### Logical Operators in Python
+
+Logical operators in Python are used to combine conditional statements. They evaluate expressions and return a Boolean result (`True` or `False`).
+
+#### 1. `and` Operator
+
+The `and` operator returns `True` if both operands are `True`, otherwise, it returns `False`.
+
+**Truth Table:**
+
+| A     | B     | A and B |
+|-------|-------|---------|
+| True  | True  | True    |
+| True  | False | False   |
+| False | True  | False   |
+| False | False | False   |
+
+**Examples:**
+
+```python copy showLineNumbers
+# Example 1
+x = 5
+print(x > 0 and x < 10)  # True
+
+# Example 2
+y = 15
+print(y > 10 and y % 2 == 0)  # False
+
+# Example 3
+is_sunny = True
+is_warm = False
+print(is_sunny and is_warm)  # False
+```
+
+**Output:**
+
+```
+True
+False
+False
+```
+
+#### 2. `or` Operator
+
+The `or` operator returns `True` if at least one operand is `True`, otherwise, it returns `False`.
+
+**Truth Table:**
+
+| A     | B     | A or B  |
+|-------|-------|---------|
+| True  | True  | True    |
+| True  | False | True    |
+| False | True  | True    |
+| False | False | False   |
+
+**Examples:**
+
+```python copy showLineNumbers
+# Example 1
+x = 5
+print(x > 0 or x < 0)  # True
+
+# Example 2
+y = 15
+print(y > 10 or y % 2 == 0)  # True
+
+# Example 3
+is_sunny = True
+is_warm = False
+print(is_sunny or is_warm)  # True
+```
+
+**Output:**
+
+```
+True
+True
+True
+```
+
+#### 3. `not` Operator
+
+The `not` operator returns `True` if the operand is `False`, and vice versa.
+
+**Truth Table:**
+
+| A     | not A |
+|-------|-------|
+| True  | False |
+| False | True  |
+
+**Examples:**
+
+```python copy showLineNumbers
+# Example 1
+x = 5
+print(not x > 0)  # False
+
+# Example 2
+y = 15
+print(not y < 10)  # True
+
+# Example 3
+is_sunny = True
+print(not is_sunny)  # False
+```
+
+**Output:**
+
+```
+False
+True
+False
+```
+
+### Explanation
+
+- **Logical Operators:** `and`, `or`, `not` are used to combine or negate logical statements.
+- **Truth Tables:** Show the result of combining or negating Boolean values.
+- **Examples:** Demonstrate how each operator works with different types of operands.
+  
+These logical operators are fundamental for controlling the flow of execution in Python programs and are widely used in conditions and loops.

@@ -1,5 +1,7 @@
 {
     "type":"type()",
     "id":"id()",
-    "copy":"copy()"
+    "copy":"copy()",
+    "ciel":"ciel()",
+    "floor":"floor()"
   }

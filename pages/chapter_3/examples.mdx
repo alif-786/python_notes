@@ -1,0 +1,303 @@
+# Operators
+
+```python copy showLineNumbers
+print(10 + 5)
+# we are using operators directly on values
+```
+Output:
+```
+15
+```
+---
+
+# Python Arithmetic Operators
+
+```python copy showLineNumbers
+x = 5
+y = 3
+print(x + y)
+# WE HAVE USED + OPERATOR ON VARIABLE
+```
+Output:
+```
+8
+```
+---
+
+```python copy showLineNumbers
+x = 5
+y = 3
+print(x - y)
+```
+Output:
+```
+2
+```
+---
+
+```python copy showLineNumbers
+x = 5
+y = 3
+print(x * y)
+```
+Output:
+```
+15
+```
+---
+
+```python copy showLineNumbers
+x = 5
+y = 3
+print(x / y)
+# Division will give correct output till 15th digit
+```
+Output:
+```
+1.6666666666666667
+```
+---
+
+```python copy showLineNumbers
+x = 25
+y = 7
+print(x % y) # 25%7
+# we will get the remainder value
+# 25/7 => 3.5
+# quotient => 3
+# remainder => 4
+```
+Output:
+```
+4
+```
+---
+
+```python copy showLineNumbers
+x = 25
+y = 3
+print(x // y)
+print(x % y)
+# floor => Lowest Nearest Real Value
+# the floor division // rounds the result down to the nearest whole number
+```
+Output:
+```
+8
+1
+```
+---
+
+```python copy showLineNumbers
+x = 2
+y = 3
+print(x ** y) # same as 2*2*2
+# 2**5 => Exponent (to the power of)
+```
+Output:
+```
+8
+```
+---
+
+# Python Assignment Operators
+
+```python copy showLineNumbers
+x = 5
+print(x)
+```
+Output:
+```
+5
+```
+---
+
+```python copy showLineNumbers
+x = 5
+x += 3
+# x = x + 3
+# x = 5 + 3
+print(x)
+# Python program will run in Top -> Bottom direction &
+# execute in the direction of Right to Left
+```
+Output:
+```
+8
+```
+---
+
+```python copy showLineNumbers
+x = 5
+x -= 3
+# x = x-3
+# x = 5-3
+print(x)
+```
+Output:
+```
+2
+```
+---
+
+```python copy showLineNumbers
+x = 5
+x *= 3
+print(x)
+# x = x*3
+# x = 5*3
+```
+Output:
+```
+15
+```
+---
+
+```python copy showLineNumbers
+x = 5
+x /= 3
+print(x)
+```
+Output:
+```
+1.6666666666666667
+```
+---
+
+```python copy showLineNumbers
+x = 5
+x %= 3
+# x = x%3
+# x = 5%3
+print(x)
+```
+Output:
+```
+2
+```
+---
+
+```python copy showLineNumbers
+x = 5
+x //= 3
+print(x)
+# x = 5//3 Floor => Quotient
+```
+Output:
+```
+1
+```
+---
+
+```python copy showLineNumbers
+x = 2
+x **= 4
+# x = x**4
+# x = 2*2*2*2
+print(x)
+```
+Output:
+```
+16
+```
+---
+
+# Comparison Operators
+
+```python copy showLineNumbers
+x = 6
+y = 7
+
+print(x == y)
+# returns False
+
+print(x != y)
+# returns True
+
+print(x > y)
+# returns False
+
+print(x < y)
+# returns True
+
+print(x >= y)
+# returns False
+
+print(x <= y)
+# returns True
+```
+---
+
+# Python Logical Operators
+
+```python copy showLineNumbers
+x = 5
+print(x > 3 and x > 10)
+# False
+```
+---
+
+```python copy showLineNumbers
+x = 5
+print(x < 7 or x < 4)
+# True
+```
+---
+
+```python copy showLineNumbers
+x = 5
+print(not(x < 3 and x < 10))
+# True
+# returns True because not is used to reverse the result
+```
+---
+
+```python
+age = 700
+if age >= 18 and age <= 100:
+    print("You can vote")
+else:
+    print("You need to wait")
+```
+---
+
+# Membership Operator
+
+```raw
+in -> it checks if any substring is present in the main string or not, if yes - True
+not in -> it checks if any substring is present in the main string or not, if no - True
+```
+
+```python
+alpha = 'abcde'
+print('a' in alpha)
+# True
+print('p' in alpha)
+# False
+```
+---
+
+```python
+print('a' not in alpha)
+# False
+```
+---
+
+# Identity Operator (==)
+
+```python
+a, b, c = 10, 10, 5
+print(a is b)
+# True
+print(a is c)
+# False
+```
+---
+
+```python copy showLineNumbers
+print(a is not b)
+# False
+print(a is not c)
+# True
+```
+

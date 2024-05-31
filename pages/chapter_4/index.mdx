@@ -1,0 +1,84 @@
+# Decision Making in Python
+
+Decision making in Python is accomplished using conditional statements. These statements allow the program to make decisions based on the evaluation of conditions. The most common types of conditional statements in Python are `if`, `elif` (else if), and `else`.
+
+## `if` Statement
+
+The `if` statement is used to execute a block of code only if a specified condition is true.
+
+```python copy showLineNumbers
+age = 18
+if age >= 18:
+    print("You are eligible to vote")
+```
+
+Output:
+```
+You are eligible to vote
+```
+
+## `if` ... `else` Statement
+
+The `else` statement follows an `if` statement and executes a block of code if the same condition is false.
+
+```python copy showLineNumbers
+age = 15
+if age >= 18:
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote yet")
+```
+
+Output:
+```
+You are not eligible to vote yet
+```
+
+## `if` ... `elif` ... `else` Statement
+
+The `elif` statement allows you to check multiple conditions. If the condition for `if` is False, it checks the condition of the next `elif` block, and so on. If all conditions are false, the `else` block is executed.
+
+```python copy showLineNumbers
+score = 75
+
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
+```
+
+Output:
+```
+Grade: C
+```
+
+## Nested `if` Statements
+
+You can use one `if` or `else if` (elif) statement inside another `if` or `elif` statement(s). This is called nested decision making.
+
+```python copy showLineNumbers
+age = 18
+qualification = "graduate"
+
+if age >= 18:
+    if qualification == "graduate":
+        print("You are eligible for the job")
+    else:
+        print("You need to be a graduate to apply")
+else:
+    print("You are not eligible for the job")
+```
+
+Output:
+```
+You are eligible for the job
+```
+
+Decision making is an essential part of programming, allowing developers to control the flow of the program based on certain conditions.
+

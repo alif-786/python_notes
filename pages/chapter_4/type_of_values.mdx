@@ -1,0 +1,99 @@
+### Predefined Values in Python
+
+Predefined values in Python are built-in constants and types that come with the language. These values are always available and provide fundamental functionality.
+
+#### Boolean Values: `True`, `False`
+
+Boolean values represent truth values and are commonly used in conditional statements and expressions.
+
+**Example:**
+
+```python copy showLineNumbers
+print(True)   # Output: True
+print(False)  # Output: False
+```
+
+#### None
+
+`None` represents the absence of a value or a null value. It is often used to signify 'nothing' or 'no value here'.
+
+**Example:**
+
+```python copy showLineNumbers
+print(None)   # Output: None
+```
+
+#### Numeric Types: `int`, `float`
+
+Numeric types include integers (`int`) and floating-point numbers (`float`). These are used for mathematical calculations and representing numeric data.
+
+**Example:**
+
+```python copy showLineNumbers
+print(42)     # Output: 42
+print(3.14)   # Output: 3.14
+```
+
+#### Sequences: `str`, `list`
+
+Sequences include strings (`str`) and lists (`list`). Strings are used for text data, while lists are used to store collections of items.
+
+**Example:**
+
+```python copy showLineNumbers
+print("hello")        # Output: hello
+print([1, 2, 3])      # Output: [1, 2, 3]
+```
+
+### Summary
+
+- **Boolean Values**: `True`, `False` - Represent truth values.
+- **None**: Represents the absence of a value.
+- **Numeric Types**: `int`, `float` - Represent integers and floating-point numbers.
+- **Sequences**: `str`, `list` - Represent text data and collections of items.
+
+### user-defined Values in Python
+It means we are asking to enter any type of value to the user at a runtaime. These values are not pre-defined for this purpose we need to use one function called as input()
+
+
+### `input()` Function in Python
+
+The `input()` function in Python allows you to accept user input. It reads a line from input, converts it into a string (stripping a trailing newline), and returns that. This function is primarily used in console-based programs where the user enters text or numeric data.
+
+#### Example
+
+```python copy showLineNumbers
+# Prompting the user for their name
+name = input("Enter your name: ")
+
+# Prompting the user for their age
+age = input("Enter your age: ")
+
+# Displaying the entered values
+print(f"Hello, {name}! You are {age} years old.")
+```
+
+#### Output
+
+```mdx
+Enter your name: John
+Enter your age: 30
+Hello, John! You are 30 years old.
+```
+
+### Explanation
+
+1. **Prompting for Input**: The `input()` function takes a prompt (a string) as an argument. This prompt is displayed to the user before input is taken.
+
+2. **User Input**: The user enters their response in the console. Here, "John" and "30" are entered as the name and age respectively.
+
+3. **String Conversion**: The input from `input()` is returned as a string. If you need to work with a different type (like an integer or float), you'll need to convert it explicitly using `int()` or `float()`.
+
+4. **Output**: The program then uses `print()` to display a message that includes the user's entered name and age.
+
+### Notes
+
+- **String Input**: The `input()` function always returns a string, so you may need to convert it to a numeric type (like `int` or `float`) if you want to perform calculations.
+- **User Interaction**: `input()` allows for interactive use of your program, making it more dynamic and responsive.
+
+This example demonstrates the basic usage of `input()` to get user input and how to incorporate that input into a message for output.
